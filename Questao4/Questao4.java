@@ -33,17 +33,16 @@ public class Questao4 {
             File output = new File("C:\\Users\\jvictor\\IdeaProjects\\PDI\\src\\Questao4\\image\\Flor.png");
             ImageIO.write(imagemResultado, "png", output);
 
-            System.out.println("Fundo transparente concluído.");
+            System.out.println("Fundo transparente Conluido");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     private static boolean isTonalidadeRosa(Color cor, Color corRosa) {
-        // Você pode ajustar esses valores de limite para definir a tonalidade de rosa desejada.
-        int limiteRed = 40; // Limite de diferença em vermelho
-        int limiteGreen = 40; // Limite de diferença em verde
-        int limiteBlue = 40; // Limite de diferença em azul
+        int limiteRed = 40; 
+        int limiteGreen = 40;
+        int limiteBlue = 40; 
 
         int diffRed = Math.abs(cor.getRed() - corRosa.getRed());
         int diffGreen = Math.abs(cor.getGreen() - corRosa.getGreen());
